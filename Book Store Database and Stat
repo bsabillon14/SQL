@@ -1,0 +1,21 @@
+CREATE TABLE books (id integer primary key, item TEXT, quantity INTEGER, sales INTEGER, price INTEGER);
+
+INSERT INTO books VALUES (1, "Lord of the Rings", 10, 5, 19);
+INSERT INTO books VALUES (2, "Harry Potter", 20, 14, 25);
+INSERT INTO books VALUES (3, "Game of Thrones", 20, 20, 30);
+INSERT INTO books VALUES (4, "Percy Jackson & the Olympians", 20, 18, 15);
+INSERT INTO books VALUES (5, "The Witcher", 20, 5, 12);
+INSERT INTO books VALUES (6, "ATLAS SIX", 10, 4, 10);
+INSERT INTO books VALUES (7, "Heroes of Olympus", 20, 15, 15);
+INSERT INTO books VALUES (8, "Bridgerton", 20, 19, 15);
+INSERT INTO books VALUES (9, "Fire & Blood", 20, 19, 30);
+INSERT INTO books VALUES (10, "The Winter Witch", 15, 8, 12);
+INSERT INTO books VALUES (11, "Chicken Soup for the Soul", 20, 10, 20);
+INSERT INTO books VALUES (12, "Six of Crows", 20, 13, 22);
+INSERT INTO books VALUES (13, "Age of Adeline", 20, 9, 15);
+INSERT INTO books VALUES (14, "The Art of War", 10, 6, 25);
+INSERT INTO books VALUES (15, "Shadow & Bone", 20, 19, 13);
+
+SELECT * FROM books ORDER BY price desc;
+
+SELECT AVG (price) FROM books WHERE Sales >= 15;
